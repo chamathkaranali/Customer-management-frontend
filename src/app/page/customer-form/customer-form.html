@@ -1,0 +1,33 @@
+<div class="form-container">
+  <h1>Customer Form</h1>
+
+  <div class="customer-form">
+    
+    <div class="form-group">
+
+      <label for="name">Name:</label>
+      <input type="text" placeholder="Enter customer name" [(ngModel)]="customer.name">
+      <label for="name">{{customer.name}}</label>
+
+    </div>
+
+    <div class="form-group">
+
+      <label for="email">Email:</label>
+      <input type="email" placeholder="Enter customer email" [(ngModel)]="customer.email">
+      <label for="email">{{customer.email}}</label>
+
+    </div>
+
+    <div class="form-group">
+
+      <label for="phone">Phone:</label>
+      <input type="tel" placeholder="Enter 10-digit phone number" [(ngModel)]="customer.phoneNumber">
+      <label for="phone">{{customer.phoneNumber}}</label>
+
+    </div>
+
+    <button type="submit" class="btn-submit">Submit</button>
+
+  </div>
+</div>
