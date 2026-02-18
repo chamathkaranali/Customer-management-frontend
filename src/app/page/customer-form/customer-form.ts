@@ -12,13 +12,19 @@ interface Customer{
   imports: [FormsModule],
   templateUrl: './customer-form.html',
   styleUrl: './customer-form.css',
-
 })
+
 export class CustomerForm {
+  customers:Customer[]=[];
   customer:Customer={
     name:'',
     email:'',
     phoneNumber:''
   } 
+
+  addCustomer(){
+    this.customers.push(this.customer)
+    console.log(this.customers);
+  }
 
 }
